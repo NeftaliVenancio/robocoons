@@ -1,0 +1,132 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+/* Estilos para el header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    margin-top: 80px; /* Ajusta el valor según la altura del header */
+    padding: 50px;
+    background-color: #fff;
+    /* Resto de estilos para las secciones */
+  }
+  
+
+.hero {
+	height: 100vh;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos para el contenido del hero */
+.hero-content {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+
+/* Estilos para el header */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Estilos para el logo */
+header img {
+	width: 200px;
+	height: auto;
+}
+
+/* Efecto hover para el logo */
+
+header img:hover {
+	transform: scale(1.1);
+}
+
+
+/* Estilos para el menú de navegación */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ff0;
+}
+
+/* Estilos para la sección Hero */
+.hero {
+	background-image: url(images/hero.jpeg);
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Estilos para el contenido de la sección Hero */
+.hero-content {
+	text-align: center;
+	color: #fff;
+}
+
+.hero-content img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.hero-content h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+.hero-content p {
+	font-size: 1.5em;
+	margin-bottom: 30px;
+}
+
+.hero-content a {
+	display: inline-block;
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border-radius: 30px;
+	font-size: 1.2em;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.hero-content a:hover {
+	background-color: #ff0;
+	color: #fff;
+}
