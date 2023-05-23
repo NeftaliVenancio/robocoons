@@ -1,35 +1,62 @@
-<meta charset="UTF-8">
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Robocoons </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Mi sitio web</title>
+  <style>
+    /* Establecer el tamaño completo de la sección */
+    section {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+    }
+
+    /* Establecer el fondo como una imagen de carrusel */
+    section {
+      background-image: url("imagen1.jpg"), url("imagen2.jpg"), url("imagen3.jpg");
+      background-size: cover;
+      background-position: center center;
+      animation: carrusel 20s infinite;
+    }
+
+    /* Establecer el logo al centro de la pantalla */
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    /* Establecer el texto y el botón debajo del logo */
+    div {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+    }
+
+    /* Establecer la animación del carrusel */
+    @keyframes carrusel {
+      0% { background-image: url("images/hero.jpeg"); }
+      33.33% { background-image: url("images/hero2.jpeg"); }
+      66.66% { background-image: url("images/hero3.jpeg"); }
+      100% { background-image: url("images/hero.jpeg"); }
+    }
+  </style>
 </head>
 <body>
-	<header>
-		<a href="http://hayas.edu.mx"><img src="images/logos/logo_hayas_blanco.png" alt="logo hayas"></a>
-		<nav>
-			<ul>
-				<li><a href="quienes-somos.html">Quienes somos</a></li>
-				<li><a href="nuestros-robots.html">Nuestros robots</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+  <section>
+    <img src="images/logos/logo-robocoons1.png" alt="Robocoons">
+    <div>
+      <h1>Bienvenido al sitio web</h1>
+      <a href="#sobre-nosotros">Ver más</a>
+    </div>
+  </section>
 
-    <section class="hero">
-        <div class="hero-content">
-            <img src="images/logos/logo-robocoons1.png" alt="Robocoons">
-            <h1>equipo</h1>
-            <p>Somos una empresa especializada en servicios de robótica y automatización</p>
-            <a href="servicios.html">Ver servicios</a>
-        </div>
-    </section>
-    
-
-	<main>
-		<!-- Contenido de la página -->
-	</main>
+  <section id="sobre-nosotros">
+    <!-- Contenido de la sección Sobre nosotros -->
+  </section>
 </body>
 </html>
